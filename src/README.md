@@ -15,6 +15,7 @@ Configurar o framework Serverless
 $ npm i -g serverless
 
 Desenvolvimento do projeto
+
 $ serverless
 Login/Register: No
 Update: No
@@ -54,6 +55,7 @@ resources:
             - AttributeName: id
               KeyType: HASH
 Desenvolver funções lambda
+
 - Pasta /src do repositório
 - Obter arn da tabela no DynamoDB AWS Console -> DynamoDB -> Overview -> Amazon Resource Name (ARN)
 - Atualizar arquivo serverless.yml com o código a seguir, abaixo do ```region:```
@@ -69,6 +71,7 @@ Desenvolver funções lambda
             Resource:
               - arn:aws:dynamodb:us-east-1:167880115321:table/ItemTable
 Instalar dependências
+
 npm init npm i uuid aws-sdk
 
 Atualizar lista de funções no arquivo serverless.yml
